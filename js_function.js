@@ -69,19 +69,23 @@ function search()
 function meow()
 {
 	alert("恭喜你你發現了一隻貓\n貓：喵喵喵喵喵喵~~<( O ω O )>");
+	return false;
 }
 // σ ` ▽ ´ ) σ的彈跳視窗
 function lying_1()
 {
 	alert("你被騙了~ 這裡沒東西ˊ 艸 ˋ* ");
+	return false;
 }
 // (ㄏ￣▽￣)ㄏ的彈跳視窗
 function lying_2()
 {
 	alert("你又被騙了www 這裡依舊沒有東西 ﾟ ∀ ﾟ) σ");
+	return false;
 }
 // ¯\_( ツ )_/¯的彈跳視窗
 function lying_3()
 {
 	alert("你還是被騙了...— △—\n這裡根本就沒有東西好嗎(θ _ θ)");
+	return false;
 }
