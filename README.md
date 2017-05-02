@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -13,13 +12,17 @@
 
 	<title>首頁</title>
 	<style>
+	div
+	{
+		text-align: center;
+	}
 	</style>
 </head>
 
 <body data-spy="scroll">
 	<div>
 	<h3>~測試網頁區~</h3>
-	<a href="web1/index.html">網頁1</a>
+	<a href="web1/index.html">網頁1</a><br/>
 	<a href="web2/index.html">網頁2</a>
 	</div>
 </body>
