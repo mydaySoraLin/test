@@ -22,8 +22,9 @@
 <body data-spy="scroll">
 	<div>
 	<h3>~測試網頁區~</h3>
-	<a href="web1/index.html">網頁1</a><br/>
-	<a href="web2/index.html">網頁2</a>
+	<br/><br/>
+	<a href="web1/index.html">1. 網頁1</a><br/>
+	<a href="web2/index.html">2. 網頁2</a>
 	</div>
 </body>
 </html>
