@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" href="layout.css" type="text/css">
+	<script src="js_function.js"></script>
+	
+	<title>外部連結</title>
+	<style>
+		article
+		{
+			text-align: left;
+		}
+		h3
+		{
+			display:inline;
+			color: black;
+		}
+		h3, ol
+		{
+			font-family: '標楷體';
+		}
+		ol
+		{
+			font-size: 20px;
+		}
+		img
+		{
+			width: 45px;
+			height: 45px;
+		}
+	</style>
+</head>
+
+<body data-spy="scroll">
+	<!-- 上方選單 -->
+	<div id="header">
+		<h2 class="display-5">
+			<a id="index" href="test_web_index.html">Welcome To My Website</a>
+		</h2>
+		<ul class="nav nav-tabs justify-content-end">
+			<li class="nav-item">
+				<a class="nav-link active" href="#" role="button" onclick="meow()">|ΦωΦ)></a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">點我ヽ( ° ▽ °)ノ</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="" onclick="lying_1()">σ ` ▽ ´ ) σ</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#" onclick="lying_2()">(ㄏ￣▽￣)ㄏ</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#" onclick="lying_3()">¯\_( ツ )_/¯</a>
+				</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="out_link.html">Link ٩(๑> ₃ <)۶</a>
+			</li>
+			<input id="search" class="form-control" type="text" placeholder="Search" />
+			<button id="btn-search" class="btn btn-success my-2 my-sm-0" onclick="search()">Search</button>
+		</ul>
+	</div>
+	<!-- 左邊選單 -->
+	<div class="container" id="side_left">
+		<dl>
+			<dt><a href="test_web_index.html">首&emsp;&emsp;頁</a></dt>
+			<dt><a href="init.html">網站起源</a></dt>
+			<dt><a href="info.html">自我介紹</a></dt>
+			<dt><a href="out_link.html">外部連結</a></dt>
+		</dl>
+	</div>
+	<!-- 右邊連結 -->
+	<div class="container" id="side_right">
+		<article class="container-fluid">
+			<h3>外部連結</h3><img src="bird.gif" alt="">
+			<ol>
+				<li>Plurk噗浪：<br/>
+					<a href="www.plurk.com.tw/smalldog07">www.plurk.com.tw/smalldog07</a>&emsp;<span>←俺的喵窩喔~</span>
+				</li>
+				<li>Facebook：<br/>
+					<a href="www.facebook.com">www.facebook.com</a>
+				</li>
+				<li>LINE ID：<br/>
+					small_ghost &emsp;<del>才怪</del>
+				</li>
+				<li>PhytoFound菲德芳生物科技有限公司：<br/>
+					<a href="http://phytofound.blogspot.tw/">www.phytofound.com.tw</a>
+				</li>
+				<li>bootstrap<br/>
+					<a href="http://getbootstrap.com/">getbootstrap.com</a>
+				</li>
+				<li>bootstrap 4(alpha)<br/>
+					<a href="https://v4-alpha.getbootstrap.com">v4.alpha.getbootstrap.com</a>
+				</li>
+			</ol>
+		</article>
+	</div>
+	<!-- 底部 -->
+	<div id="footer">
+		<footer class="container-fluid">
+			<div class="row justify-content-between">
+				<p class="col-sm-2">made by Sora_lin</p>
+				<ul class="col-sm-8">
+					<li class="col-sm-1">
+						<a href="https://twitter.com/"><img src="https://image.flaticon.com/icons/png/128/145/145812.png"></a>
+					</li>
+					<li class="col-sm-1">
+						<a href="https://facebook.com"><img src="https://image.flaticon.com/icons/png/128/145/145802.png"></a>
+					</li>
+					<li class="col-sm-1">
+						<a href="https://www.instagram.com/"><img src="https://image.flaticon.com/icons/png/128/145/145805.png"></a>
+					</li>
+					<li class="col-sm-1">
+						<a href="https://www.flickr.com/"><img src="https://image.flaticon.com/icons/png/128/145/145803.png"></a>
+					</li>
+		      </ul>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
+
+<script>
+
+</script>

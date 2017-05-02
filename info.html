@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="layout.css" type="text/css">
+	<script src="js_function.js"></script>
+	
+	<title>自我介紹</title>
+	<style>
+		table
+		{
+			width: 60%;
+			text-align: left;
+			vertical-align: center;
+			font:bold 20px '標楷體';
+			border: 1px red solid;
+		}
+		table tr, table th, table td
+		{
+			padding: 5px;
+			margin: 5px;
+			/*border: 1px red solid;*/
+		}
+		th
+		{
+			width: 35%;
+			color: FireBrick;
+			/*background:-webkit-linear-gradient(left, white,#84C1FF 80%);
+	        background:-o-linear-gradient(left, white,#84C1FF 80%);
+			background:linear-gradient(left, white,#84C1FF 80%);*/
+		}
+		td
+		{
+			width: 65%;
+		}
+		img
+		{
+			width: 100px;
+			height: 100px;
+		}
+	</style>
+</head>
+
+<body data-spy="scroll">
+	<!-- 上方選單 -->
+	<div id="header">
+		<h2 class="display-5">
+			<a id="index" href="test_web_index.html">Welcome To My Website</a>
+		</h2>
+		<ul class="nav nav-tabs justify-content-end">
+			<li class="nav-item">
+				<a class="nav-link active" href="#" role="button" onclick="meow()">|ΦωΦ)></a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">點我ヽ( ° ▽ °)ノ</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="" onclick="lying_1()">σ ` ▽ ´ ) σ</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#" onclick="lying_2()">(ㄏ￣▽￣)ㄏ</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#" onclick="lying_3()">¯\_( ツ )_/¯</a>
+				</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="out_link.html">Link ٩(๑> ₃ <)۶</a>
+			</li>
+			<input id="search" class="form-control" type="text" placeholder="Search" />
+			<button id="btn-search" class="btn btn-success my-2 my-sm-0" onclick="search()">Search</button>
+		</ul>
+	</div>
+	<!-- 左邊選單 -->
+	<div class="container" id="side_left">
+		<dl>
+			<dt><a href="test_web_index.html">首&emsp;&emsp;頁</a></dt>
+			<dt><a href="init.html">網站起源</a></dt>
+			<dt><a href="info.html">自我介紹</a></dt>
+			<dt><a href="out_link.html">外部連結</a></dt>
+		</dl>
+	</div>
+	<!-- 右邊自介 -->
+	<div class="container" id="side_right">
+		<article class="container-fluid">
+			<table class="table table-striped table-bordered">
+				<thead>
+					<tr>
+						<th colspan="2">自我介紹</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>姓名：</th>
+						<td>虛空雲</td>
+					</tr>
+					<tr>
+						<th>性別：</th>
+						<td>無(?)</td>
+					</tr>
+					<tr>
+						<th>出生年：</th>
+						<td>西元1994</td>
+					</tr>
+					<tr>
+						<th>星座：</th>
+						<td>巨蟹座</td>
+					</tr>
+					<tr>
+						<th>興趣：</th>
+						<td>發呆、拆東西<del>&偷咬人</del></td>
+					</tr>
+					<tr>
+						<th>喜歡的東西：</th>
+						<td>毛蹭蹭的小動物</td>
+					</tr>
+					<tr>
+						<th>簡單介紹自己：</th>
+						<td>就是隻喵，品種是這種喔→<a href="https://www.google.com.tw/search?q=%E8%B3%93%E5%A3%AB%E8%B2%93&espv=2&biw=921&bih=434&tbm=isch&tbo=u&source=univ&sa=X&ved=0ahUKEwjfyP-Ul57SAhWFjpQKHbYOCrMQsAQIHQ">賓士貓</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</article>
+			<img src="cat-1.gif" alt="羅小黑">
+			<img src="cat-2.gif" alt="羅小黑">
+			<img src="cat-3.gif" alt="羅小黑">
+	</div>
+	<!-- 底部 -->
+	<div id="footer">
+		<footer class="container-fluid">
+			<div class="row justify-content-between">
+				<p class="col-sm-2">made by Sora_lin</p>
+				<ul class="col-sm-8">
+					<li class="col-sm-1">
+						<a href="https://twitter.com/"><img src="https://image.flaticon.com/icons/png/128/145/145812.png"></a>
+					</li>
+					<li class="col-sm-1">
+						<a href="https://facebook.com"><img src="https://image.flaticon.com/icons/png/128/145/145802.png"></a>
+					</li>
+					<li class="col-sm-1">
+						<a href="https://www.instagram.com/"><img src="https://image.flaticon.com/icons/png/128/145/145805.png"></a>
+					</li>
+					<li class="col-sm-1">
+						<a href="https://www.flickr.com/"><img src="https://image.flaticon.com/icons/png/128/145/145803.png"></a>
+					</li>
+		      </ul>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
