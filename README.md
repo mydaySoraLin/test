@@ -20,8 +20,8 @@
 	<div>
 		<h3>~測試網頁區~</h3>
 		<br/><br/>
-		<a href="/web1/index.html">1. 網頁1</a><br/><br/>
-		<a href="/web2/index.html">2. 網頁2</a>
+		<a href="web1/index.html">1. 網頁1</a><br/><br/>
+		<a href="web2/index.html">2. 網頁2</a>
 	</div>
 </body>
 </html>
