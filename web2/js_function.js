@@ -133,8 +133,7 @@ $(document).ready(function()
 			if(count == 0)
 			{
 				$(this).after("<div style='position:fixed;width:100%;height:100%'><iframe id='video' frameborder='0' height='100%' width='100%' src='https://youtube.com/embed/zuCkoctUg1w?autoplay=1&controls=0&autohide=1'></iframe></div>");
-				// $(this).after("<div style='position:fixed;width:100%;height:100%'><iframe id='video' frameborder='0' height='100%' width='100%' src='https://www.youtube.com/embed/MFNxnTVqqAw?autoplay=1&controls=0&autohide=1'></iframe></div>");
-				// count++;
+				count++;
 			}
 		},
 		function(){}
