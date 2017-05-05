@@ -237,11 +237,9 @@ function stop()
 	if(count >= 2)
 	{
 		alert("88 ´⊙ω⊙`");
-		var gui = require('nw.gui');
- 		var win = gui.Window.get();
-		win.close();
 		//window.open('', '_self', '');
 		//window.close();
+		document.location.href="http://www.google.com";
 	}
 	count++;
 }
