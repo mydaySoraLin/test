@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="layout.css" type="text/css">
+	<script src="js_function.js"></script>
+	<script src="fool.js"></script>
+
+	<title>作品集</title>
+	<style>
+		#display
+		{
+			height: 500px;
+		}
+		#display a
+		{
+			text-decoration: none;
+			font-size: 18px;
+		}
+		label
+		{
+			font-size: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- header -->
+	<div id="header" class="container">
+		<ul class="nav nav-pills nav-fill">
+			<li class="nav-item">
+				<a class="nav-link" href="index.html">HOME</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="cat.html">內有萌貓</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link active" href="web.html">作品集</a>
+			</li>
+			<li class="nav-item">
+				<a id="secret" class="nav-link" href="secret.html" onclick="return secret();">作者的秘密</a>
+			</li>
+		</ul>
+		<div id="jump">
+			<img id="duck" src="img/B0001.jpg" width="80%" />
+		</div>
+	</div>
+
+	<!-- listbox -->
+	<div id="listbox" class="container">
+		<div class="carousel-inner">
+			<div>
+				<img class="d-block img-fluid" src="img/01540_HD.jpg" />
+			</div>
+		</div>
+	</div>
+
+	<!-- display 公告欄區 -->
+	<div id="display" class="container">
+		<h2>製作過的作品</h2><br/>
+		
+		<label>1. 練習網頁1</label><br/>
+		<a href="https://mydaysoralin.github.io/test/web1/index.html"> → 連結 ← </a><br/><br/>
+		
+		<label>2. 練習網頁2(此網頁)</label><br/>
+		<a href="https://mydaysoralin.github.io/test/web2/index.html"> → 連結 ← </a><br/><br/>
+
+		<label>3. 山海經</label><br/>
+		<a href="http://163.13.175.7/105js/105jsa01/index.php"> → 連結 ← </a><br/><br/>
+
+		<label>4. 留言板</label><br/>
+		<a href="http://tw.myday.com.tw/sora/index.php"> → 連結(可能失效) ← </a><br/><br/>
+	</div>
+	
+	<!-- footer -->
+	<div id="footer" class="container">
+		<div class="butn">
+			<span>(ㄏ￣▽￣)ㄏ&emsp;</span>
+			<button id="fate" class="btn btn-primary" onclick="fate();"> >> 抽抽樂 << </button>
+			<span>&emsp;ㄟ(￣▽￣ㄟ)</span><br/>
+			<label>內有多種大獎，等你來抽！</label>
+		</div>
+		<div style="text-align: right;">
+			<small>maded by SoraLin</small>
+		</div>
+	</div>
+
+<script>
+$(document).ready(function()
+{
+	$("#jump").hide();
+});
+</script>
+
+</body>
+</html>

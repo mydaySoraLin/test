@@ -102,7 +102,7 @@ $(document).ready(function()
 				//右
 				jump.animate({left:box_left + 2 * (40 - 10 * i) + 30}, 50);
 				//大小
-				duck.animate({width:"150%"});
+				duck.animate({width:"130%"});
 			}
 		},
 		function()
@@ -116,10 +116,18 @@ $(document).ready(function()
 	$(".icon").hover(
 		function()
 		{
-			position_x = Math.random() * 10;
-			position_y = Math.random() * 50;
-			move = "translate(" + position_x + "em,-" + position_y +"em)";
-			$(this).css({"transform": move + "rotate(180deg)", "transition" : "0.7s"});
+			position_x = Math.random() * 10 + 10;
+			position_y = Math.random() * 50 + 40;
+			num = Math.random() * 10 + 1;
+			if(num <= 5)
+			{
+				move = "translate(" + position_x + "em,-" + position_y +"em)";
+			}
+			if(num > 5)
+			{
+				move = "translate(-" + position_x + "em,-" + position_y +"em)";
+			}
+			$(this).css({"transform": move + "rotate(180deg)", "transition" : "1s"});
 		},
 		function()
 		{
@@ -141,6 +149,7 @@ $(document).ready(function()
 });
 
 var count = 0;
+var win_count = 0;
 function cat()
 {
 	if(count <= 5)
@@ -162,7 +171,84 @@ function cat()
 
 function secret()
 {
-	alert("你怎麼會覺得我會跟你說呢?(ㆆᴗㆆ)\n這當然只是騙你的啦wwww σ`▽´)σ");
+	var battle = "";
+	var str = "來剪刀石頭布，贏了就告訴你(1：剪刀  2：石頭  3：布)";
+	var lose = "秘密? 什麼秘密? 再猜拳幾次我再告訴你";
+	var fair = "平手 O 3 O ....再來一次！";
+	var num = parseInt((Math.random() * 3) * 10 / 10) + 1;
+
+	switch(num)
+	{
+		case 1:
+			battle = "剪刀";
+		break;
+		case 2:
+			battle = "石頭";
+		break;
+		case 3:
+			battle = "布";
+		break;
+	}
+
+	var win = "我出了 " + battle + " ，我贏了･∀･)ノ\n再來啊再來啊~~~~";
+
+	if(win_count == 3)
+	{
+		alert("都連續輸三次了，勇氣可嘉");
+	}
+	if(count > 3 && count <= 6)
+	{
+		alert("既然你這麼閒，就在陪你玩一下吧");
+		str = "剪刀石頭布！ (1：剪刀  2：石頭  3：布) ( •ˋ ω •)";
+		win = "我出 " + battle + " ，我贏囉\n還要來嗎?";
+		lose = ".....不算數 ¯\\\_(ツ)_/¯";
+		fair = "平手...再來";
+	}
+	if(count > 6 && count < 10)
+	{
+		alert("玩不膩阿....(哈欠");
+		str = "剪刀...石頭..布... (1：剪刀  2：石頭  3：布) ( 눈 ‸ 눈)";
+		win = battle + " ，贏了\n要繼續?";
+		lose = "你怎麼會覺得我會跟你說呢?(ㆆᴗㆆ)\n這當然只是騙你的啦wwww σ ` ▽ ´) σ";
+		fair = "平手...zzz";
+	}
+	if(count >= 10 && count < 13)
+	{
+		alert("我累了 你走吧你(躺");
+		return false;
+	}
+	if(count >= 13)
+	{
+		alert("滾");
+		location.href="www.google.com";
+	}
+
+	var answer = window.prompt(str);
+	
+	if((answer == 1 && num == 2) || (answer == 2 && num == 3) || (answer == 3 && num == 1))
+	{
+		alert(win);
+		win_count++;
+	}
+	else if((answer == 1 && num == 3) || (answer == 2 && num == 1) || (answer == 3 && num == 2))
+	{
+		alert(lose);
+		win_count = 0;
+	}
+	else if(answer == num)
+	{
+		alert(fair);
+		win_count = 0;
+	}
+	else if(answer == null || (answer == "" && answer.length == 0))
+	{
+		alert("出拳啊⊙ˇД⊙");
+	}
+	else
+	{
+		alert("讓你選數字1到3，你給我寫了些什麼→_→");
+	}
+	count++;
 	return false;
 }
 
@@ -224,7 +310,6 @@ function put()
 		window.alert('┻━┻ ︵ヽ(`Д´)ﾉ︵ ┻━┻');
 		window.alert('┻━┻ ︵ヽ(`Д´)ﾉ︵ ┻━┻');
 		window.alert('┻━┻ ︵ヽ(`Д´)ﾉ︵ ┻━┻');
-		// window.alert('再見→ _ →');
 		document.location.href="http://www.google.com";
 	}
 	count++;
@@ -237,8 +322,8 @@ function stop()
 	if(count >= 2)
 	{
 		alert("88 ´⊙ω⊙`");
-		//window.open('', '_self', '');
-		//window.close();
+		// window.open('', '_self', '');
+		// window.close();
 		document.location.href="http://www.google.com";
 	}
 	count++;
