@@ -237,6 +237,7 @@ function stop()
 	if(count >= 2)
 	{
 		alert("88 ´⊙ω⊙`");
+		window.open('', '_self', '');
 		window.close();
 	}
 	count++;
