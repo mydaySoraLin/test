@@ -25,7 +25,7 @@
 		<h3>~測試網頁區~</h3>
 		<br/><br/>
 		<a href="web1/index.html">1. 網頁1</a><br/><br/>
-		<a href="#">2. 網頁2</a><br/><br/>
+		<a href="web2/index.html">2. 網頁2</a><br/><br/>
 		<label>網頁為練習、玩樂用，內有惡搞向，請抱持娛樂心態玩玩即可，勿過於認真，謝謝</label><br/>
 		<label>如有任何意見，請私下聯絡我>.O</label>
 	</div>
