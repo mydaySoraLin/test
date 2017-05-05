@@ -215,6 +215,7 @@ function secret()
 	if(count >= 10 && count < 13)
 	{
 		alert("我累了 你走吧你(躺");
+		count++;
 		return false;
 	}
 	if(count >= 13)
