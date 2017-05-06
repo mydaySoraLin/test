@@ -222,6 +222,7 @@ function secret()
 	{
 		alert("滾");
 		location.href="www.google.com";
+		return false;
 	}
 
 	var answer = window.prompt(str);
