@@ -221,7 +221,7 @@ function secret()
 	if(count >= 13)
 	{
 		alert("滾");
-		location.href="www.google.com";
+		location.href="http://www.google.com";
 		return false;
 	}
 
