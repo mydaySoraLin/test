@@ -32,7 +32,7 @@
 		<label>網頁為練習、玩樂用，多有惡搞向，請抱持娛樂心態玩玩即可，勿過於認真，謝謝</label><br/>
 		<label>如有任何意見，請私下聯絡我>.O</label><br/><br/>
 		
-		<label>三不一要</label><br/>
+		<h4>三不一要</h4><br/>
 		<label>一、<strong>不</strong>要戳螢幕</label><br/>
 		<label>二、<strong>不</strong>要砸電腦</label><br/>
 		<label>三、<strong>不</strong>要腦充血</label><br/>
