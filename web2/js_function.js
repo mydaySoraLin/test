@@ -221,7 +221,7 @@ function secret()
 	if(count >= 13)
 	{
 		alert("滾");
-		location.href="http://www.google.com";
+		location.href="https://mydaysoralin.github.io/test/";
 		return false;
 	}
 
@@ -326,7 +326,7 @@ function stop()
 		alert("88 ´⊙ω⊙`");
 		// window.open('', '_self', '');
 		// window.close();
-		document.location.href="http://www.google.com";
+		document.location.href="https://mydaysoralin.github.io/test/";
 	}
 	count++;
 }
