@@ -17,6 +17,10 @@
 	{
 		text-decoration: none;
 	}
+	strong
+	{
+		color: red;
+	}
 	</style>
 </head>
 
@@ -32,8 +36,8 @@
 		<label>三不一要</label><br/>
 		<label>一、<strong>不</strong>要戳螢幕</label><br/>
 		<label>二、<strong>不</strong>要砸電腦</label><br/>
-		<label>三、<strong>不</strong>要生氣>uO</label><br/>
-		<label>四、<strong>要</strong>好好的玩過每個地方<small>有些地方互動多次點會有不同的反應</small></label><br/>
+		<label>三、<strong>不</strong>要腦充血</label><br/>
+		<label>四、<strong>要</strong>好好的玩過每個地方<small>(有些地方互動多次點會有不同的反應)</small></label><br/>
 	</div>
 </body>
 </html>
