@@ -12,7 +12,7 @@
 	div{ text-align: center; }
 	a{ text-decoration: none; }
 	strong{ color: red; }
-	img{ height:30px; }
+	img{ height:100px; }
 	</style>
 </head>
 
