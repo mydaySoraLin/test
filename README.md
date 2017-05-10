@@ -26,11 +26,10 @@
 
 <body>
 	<div>
-		<h3>~測試網頁區~</h3>
-		<br/><br/>
+		<h3>~測試網頁區~</h3><br/>
 		<a href="web1/index.html">1. 網頁1</a><br/><br/>
 		<a href="web2/index.html">2. 網頁2</a><br/><br/>
-		<label>網頁為練習、玩樂用，內有惡搞向，請抱持娛樂心態玩玩即可，勿過於認真，謝謝</label><br/>
+		<label>網頁為練習、玩樂用，多有惡搞向，請抱持娛樂心態玩玩即可，勿過於認真，謝謝</label><br/>
 		<label>如有任何意見，請私下聯絡我>.O</label><br/><br/>
 		
 		<label>三不一要</label><br/>
@@ -38,6 +37,9 @@
 		<label>二、<strong>不</strong>要砸電腦</label><br/>
 		<label>三、<strong>不</strong>要腦充血</label><br/>
 		<label>四、<strong>要</strong>好好的玩過每個地方<small>(有些地方互動多次點會有不同的反應)</small></label><br/>
+		<br/><br/>
+		
+		<label>若您不是出於自己的意願，突然回來這頁，代表您是被網頁中某些孩子踢回來的(笑</label>
 	</div>
 </body>
 </html>
