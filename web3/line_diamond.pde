@@ -15,11 +15,14 @@ void draw()
 {
 	background(255);
 	smooth();
-	for(int i = 1; i < num; i++)
+	for(int i = 0; i < num; i++)
 	{
-		dia[i - 1].red = dia[i].color_red();
-		dia[i - 1].green = dia[i].color_green();
-		dia[i - 1].blue = dia[i].color_blue();
+		if(i < 9)
+		{
+		dia[i].red = dia[i + 1].color_red();
+		dia[i].green = dia[i + 1].color_green();
+		dia[i].blue = dia[i + 1].color_blue();
+		}
 		if(i == 9)
 		{
 			dia[i].red = dia[0].color_red();
