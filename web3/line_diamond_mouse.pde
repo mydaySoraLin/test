@@ -163,6 +163,7 @@ boolean play = false;
 
 void playSketch()
 {
+	setup();
 	play = true;
 	loop();
 }
