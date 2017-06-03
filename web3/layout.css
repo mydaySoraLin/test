@@ -1,0 +1,87 @@
+#list
+{
+	top: 5%;
+	width: 20%;
+	height: 300px;
+	position: fixed;
+	border-radius: 5px;
+	background-color: rgb(100,100,255);
+}
+/*#list:hover
+{
+	overflow-y:scroll;
+}*/
+#list li
+{
+	color: white;
+	margin: 10px;
+	padding: 10px;
+	margin-left: -10%;
+	list-style-type:none;
+	border: 1px solid #D1D1D1;
+}
+#list li:hover
+{
+	background-color: rgb(150,150,255);
+}
+#container
+{
+	width: 80%;
+	float: right;
+	text-align: center;
+}
+.game
+{
+	margin: 10px;
+}
+hr
+{
+	margin: 1rem;
+}
+.zone
+{
+	margin: 30px;
+	padding: 30px;
+}
+.zone_span
+{
+	font-size: 20px;
+	font-weight: bold;
+}
+.control
+{
+	cursor: pointer; 
+}
+.control.stop
+{
+	font-size: 20px;
+}
+.control.play
+{
+	font-size: 16px;
+}
+canvas
+{
+	width: 400px;
+	height: 300px;
+	border: 1px gray solid;
+}
+.other canvas,#ball_5,#line_2,#line_4,#line_5
+{
+	width: 300px;
+}
+/*#line_1
+{
+	width: 600px;
+}*/
+@media screen and (max-width: 980px)
+{
+	.control.stop
+	{
+		font-size: 30px;
+	}
+	.control.play
+	{
+		font-size: 26px;
+	}
+}

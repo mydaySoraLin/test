@@ -1,0 +1,235 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="layout.css" type="text/css" media="screen">
+	<script type="text/javascript" src="processing.min.js"></script>
+	<script type="text/javascript" src="js_function.js"></script>
+
+	<title>首頁</title>
+	<style>
+		*
+		{
+			text-align: center;
+		}
+		label
+		{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div id="list">
+		<ul>
+			<li>追滑鼠區</li>
+			<li>直線條區</li>
+			<li>其&emsp;他</li>
+		</ul>
+	</div>
+
+	<div id="container">
+		<h3></h3>
+		<label>※為了保障您的遊玩品質，不建議使用各類手持電子裝置</label><br/>
+		
+		<div class="zone">	
+			<span class="zone_span">追滑鼠區</span>
+			<div class="game">
+				<canvas id="ball_1" data-processing-sources="ball_trailing.pde"></canvas>
+				<div>
+					<input type="hidden" id="ball_1p" value="0">
+					<input type="hidden" id="ball_1s" value="1"><br/>
+					<span style="font-size:18px;">play controls:</span>&emsp;
+					<span class="control stop" onclick="stop('ball_1');">■</span>&emsp;
+					<span class="control play" onclick="play('ball_1');" >▶</span>
+				</div>
+				<a href="ball_trailing.pde" target="_blank">程式碼</a>
+			</div>
+			<hr>
+			<div class="game">
+				<canvas id="ball_2" data-processing-sources="ball.pde"></canvas>
+				<div>
+					<span>可以按滑鼠左鍵拖移看看</span>
+					<input type="hidden" id="ball_2p" value="0">
+					<input type="hidden" id="ball_2s" value="1">
+					<span style="font-size:18px;">play controls:</span>&emsp;
+					<span class="control stop" onclick="stop('ball_2');">■</span>&emsp;
+					<span class="control play" onclick="play('ball_2');" >▶</span>
+				</div>
+				<a href="ball.pde" target="_blank">程式碼</a>
+			</div>
+			<hr>
+			<div class="game">
+				<canvas id="ball_3" data-processing-sources="ball_trailing_line.pde"></canvas>
+				<div>
+					<input type="hidden" id="ball_3p" value="0">
+					<input type="hidden" id="ball_3s" value="1">
+					<span style="font-size:18px;">play controls:</span>&emsp;
+					<span class="control stop" onclick="stop('ball_3');">■</span>&emsp;
+					<span class="control play" onclick="play('ball_3');" >▶</span>
+				</div>
+				<a href="ball_trailing_line.pde" target="_blank">程式碼</a>
+			</div>
+			<hr>
+			<div class="game">
+				<canvas id="ball_4" data-processing-sources="geometric_point_line.pde"></canvas>
+				<div>
+					<input type="hidden" id="ball_4p" value="0">
+					<input type="hidden" id="ball_4s" value="1">
+					<span style="font-size:18px;">play controls:</span>&emsp;
+					<span class="control stop" onclick="stop('ball_4');">■</span>&emsp;
+					<span class="control play" onclick="play('ball_4');" >▶</span>
+				</div>
+				<a href="geometric_point_line.pde" target="_blank">程式碼</a>
+			</div>
+			<hr>
+			<div class="game">
+				<canvas id="ball_5" data-processing-sources="ball_mouse.pde"></canvas>
+				<div>
+					<input type="hidden" id="ball_5p" value="0">
+					<input type="hidden" id="ball_5s" value="1">
+					<span style="font-size:18px;">play controls:</span>&emsp;
+					<span class="control stop" onclick="stop('ball_5');">■</span>&emsp;
+					<span class="control play" onclick="play('ball_5');" >▶</span>
+				</div>
+				<a href="ball_mouse.pde" target="_blank">程式碼</a>
+			</div>
+			<hr>
+			<div class="game">
+				<canvas id="ball_6" data-processing-sources="ball_multi_circle2.pde"></canvas>
+				<div>
+					<input type="hidden" id="ball_6p" value="0">
+					<input type="hidden" id="ball_6s" value="1">
+					<span style="font-size:18px;">play controls:</span>&emsp;
+					<span class="control stop" onclick="stop('ball_6');">■</span>&emsp;
+					<span class="control play" onclick="play('ball_6');" >▶</span>
+				</div>
+				<a href="ball_multi_circle2.pde" target="_blank">程式碼</a>
+			</div>
+		</div>
+
+		
+		<div class="zone">	
+			<span class="zone_span">直線條區</span>
+			<div class="game">
+				<canvas id="line_1" data-processing-sources="line_inc.pde"></canvas>
+				<div>
+					<span>↑它不會動的</span>
+				</div>
+				<a href="line_inc.pde" target="_blank">程式碼</a>
+			</div>
+			<hr>
+			<div class="game">
+				<canvas id="line_2" data-processing-sources="line.pde"></canvas>
+				<div>
+					<span>↑它不會動的</span>
+				</div>
+				<a href="line.pde" target="_blank">程式碼</a>
+			</div>
+			<hr>
+			<div class="game">
+				<canvas id="line_3" data-processing-sources="line_mouse.pde"></canvas>
+				<div>
+					<input type="hidden" id="line_3p" value="0">
+					<input type="hidden" id="line_3s" value="1">
+					<span style="font-size:18px;">play controls:</span>&emsp;
+					<span class="control stop" onclick="stop('line_3');">■</span>&emsp;
+					<span class="control play" onclick="play('line_3');" >▶</span>
+				</div>
+				<a href="line_mouse.pde" target="_blank">程式碼</a>
+			</div>
+			<hr>
+			<div class="game">
+				<canvas id="line_4" data-processing-sources="line_diamond.pde"></canvas>
+				<div>
+					<input type="hidden" id="line_4p" value="0">
+					<input type="hidden" id="line_4s" value="1">
+					<span style="font-size:18px;">play controls:</span>&emsp;
+					<span class="control stop" onclick="stop('line_4');">■</span>&emsp;
+					<span class="control play" onclick="play('line_4');" >▶</span>
+				</div>
+				<a href="line_diamond.pde" target="_blank">程式碼</a>
+			</div>
+			<hr>
+			<div class="game">
+				<canvas id="line_5" data-processing-sources="line_diamond_mouse.pde"></canvas>
+				<div>
+					<span>可以按滑鼠左鍵喔~ 試著把菱形改為同一色系吧！</span>
+					<input type="hidden" id="line_5p" value="0">
+					<input type="hidden" id="line_5s" value="1"><br/>
+					<span style="font-size:18px;">play controls:</span>&emsp;
+					<span class="control stop" onclick="stop('line_5');">■</span>&emsp;
+					<span class="control play" onclick="play('line_5');" >▶</span>
+				</div>
+				<a href="line_diamond_mouse.pde" target="_blank">程式碼</a>
+			</div>
+		</div>
+
+		<div class="zone other">	
+			<span class="zone_span">其&emsp;他</span>
+			<div class="game">
+				<canvas id="other_1" data-processing-sources="geometric2.pde"></canvas>
+				<div>
+					<span>↑它不會動的</span>
+				</div>
+				<a href="geometric2.pde" target="_blank">程式碼</a>
+			</div>
+			<hr>
+			<div class="game">
+				<canvas id="other_2" data-processing-sources="geometric3.pde"></canvas>
+				<div>
+					<input type="hidden" id="other_2p" value="0">
+					<input type="hidden" id="other_2s" value="1">
+					<span style="font-size:18px;">play controls:</span>&emsp;
+					<span class="control stop" onclick="stop('other_2');">■</span>&emsp;
+					<span class="control play" onclick="play('other_2');" >▶</span>
+				</div>
+				<a href="geometric3.pde" target="_blank">程式碼</a>
+			</div>
+			<hr>
+			<div class="game">
+				<canvas id="other_3" data-processing-sources="circle_inc.pde"></canvas>
+				<div>
+					<input type="hidden" id="other_3p" value="0">
+					<input type="hidden" id="other_3s" value="1">
+					<span style="font-size:18px;">play controls:</span>&emsp;
+					<span class="control stop" onclick="stop('other_3');">■</span>&emsp;
+					<span class="control play" onclick="play('other_3');" >▶</span>
+				</div>
+				<a href="circle_inc.pde" target="_blank">程式碼</a>
+			</div>
+			<hr>
+			<div class="game">
+				<canvas id="other_4" data-processing-sources=""></canvas>
+				<div>
+					<input type="hidden" id="other_4p" value="0">
+					<input type="hidden" id="other_4s" value="1">
+					<span style="font-size:18px;">play controls:</span>&emsp;
+					<span class="control stop" onclick="stop('other_4');">■</span>&emsp;
+					<span class="control play" onclick="play('other_4');" >▶</span>
+				</div>
+				<a href="ball_3D.pde" target="_blank">程式碼</a>
+			</div>
+			<hr>
+			<div class="game">
+				<canvas id="other_5" data-processing-sources=""></canvas>
+				<div>
+					<input type="hidden" id="other_5p" value="0">
+					<input type="hidden" id="other_5s" value="1">
+					<span style="font-size:18px;">play controls:</span>&emsp;
+					<span class="control stop" onclick="stop('other_5');">■</span>&emsp;
+					<span class="control play" onclick="play('other_5');" >▶</span>
+				</div>
+				<a href="#" target="_blank">程式碼</a>
+			</div>
+		</div>
+	</div>
+	<script>
+
+	</script>
+</body>
+</html>
