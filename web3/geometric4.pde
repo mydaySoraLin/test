@@ -27,7 +27,7 @@ void draw()
 
 		noFill();
 		arc(x[i],y[i],150,150,0+(angle[i]),PI+(angle[i]));
-		angle[i] += 1;
+		angle[i] += radians(1);
 	}
 
 	if(!play)
