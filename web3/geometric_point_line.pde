@@ -83,7 +83,7 @@ class Trailing
 	{
 		stroke(0);
 		strokeWeight(1);
-    point(location.x,location.y);
+    		point(location.x,location.y);
 	}
 }
 
