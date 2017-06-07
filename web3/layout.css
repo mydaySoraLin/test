@@ -12,6 +12,10 @@
 {
 	overflow-y:scroll;
 }*/
+#list a
+{
+	text-decoration: none;
+}
 #list li
 {
 	color: white;
