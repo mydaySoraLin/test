@@ -19,9 +19,9 @@ void draw()
 	{
 		if(i < 9)
 		{
-		dia[i].red = dia[i + 1].color_red();
-		dia[i].green = dia[i + 1].color_green();
-		dia[i].blue = dia[i + 1].color_blue();
+			dia[i].red = dia[i + 1].color_red();
+			dia[i].green = dia[i + 1].color_green();
+			dia[i].blue = dia[i + 1].color_blue();
 		}
 		if(i == 9)
 		{
