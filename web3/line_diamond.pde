@@ -50,7 +50,7 @@ class Diamond
 
 	Diamond(int i)
 	{
-		top	   = new PVector(150, i * level);
+		top    = new PVector(150, i * level);
 		right  = new PVector(150 + (num - i) * level, 150);
 		left   = new PVector(i * level, 150);
 		bottom = new PVector(150, 150 + (num - i) * level);
