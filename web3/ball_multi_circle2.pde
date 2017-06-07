@@ -67,7 +67,7 @@ class DrawCircle
 			y += dy * 0.1;
 		}
 		noFill();
-		stroke(125);
+		stroke(80);
 		ellipse(x,y,30 * (i + 1), 30 * (i + 1));
 	}
 
