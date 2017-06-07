@@ -4,7 +4,7 @@ Trailing[] points = new Trailing[numPoints];
 void setup()
 {
 	size(400,300);
-  frameRate(40);
+  	frameRate(40);
 	for(int i = 0; i < numPoints; i++)
 	{
 		points[i] = new Trailing();
