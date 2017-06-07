@@ -19,12 +19,12 @@ void draw()
 
 	for(int i = 0; i < cir_num; i++)
 	{
-		cir[i].display(i);
 		if(i != (cir_num-1))
 		{
 			cir[i+1].targetX = cir[i].nowX();
 			cir[i+1].targetY = cir[i].nowY();
 		}
+		cir[i].display(i);
 	}
 
 	if(!play)
@@ -41,7 +41,7 @@ class DrawCircle
 
 	DrawCircle(int i)
 	{
-		stroke(125);
+		stroke(80);
 		ellipse(mouseX,mouseY, 30 * (i + 1), 30 * (i + 1));
 	}
 
