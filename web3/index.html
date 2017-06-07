@@ -26,9 +26,9 @@
 <body>
 	<div id="list">
 		<ul>
-			<li>追滑鼠區</li>
-			<li>直線條區</li>
-			<li>其&emsp;他</li>
+			<a href="#mouse"><li>追滑鼠區</li></a>
+			<a href="#line"><li>直線條區</li></a>
+			<a href="#other"><li>其&emsp;他</li></a>
 		</ul>
 	</div>
 
@@ -36,7 +36,7 @@
 		<h3></h3>
 		<label>※為了保障您的遊玩品質，不建議使用各類手持電子裝置</label><br/>
 		
-		<div class="zone">	
+		<div class="zone" id="mouse">	
 			<span class="zone_span">追滑鼠區</span>
 			<div class="game">
 				<canvas id="ball_1" data-processing-sources="ball_trailing.pde"></canvas>
@@ -113,7 +113,7 @@
 		</div>
 
 		
-		<div class="zone">	
+		<div class="zone" id="line">	
 			<span class="zone_span">直線條區</span>
 			<div class="game">
 				<canvas id="line_1" data-processing-sources="line_inc.pde"></canvas>
@@ -169,7 +169,7 @@
 			</div>
 		</div>
 
-		<div class="zone other">	
+		<div class="zone other" id="other">	
 			<span class="zone_span">其&emsp;他</span>
 			<div class="game">
 				<canvas id="other_1" data-processing-sources="geometric2.pde"></canvas>
