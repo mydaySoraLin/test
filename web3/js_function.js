@@ -1,3 +1,15 @@
+var github_url = "https://github.com/mydaySoraLin/test/blob/master/web3/";
+
+$(document).ready(function()
+{
+	$("#container a").click(function()
+	{
+		var url = $(this).attr("id");
+		$(this).attr("target","_blank");
+		$(this).attr("href",github_url + url + ".pde");
+	});
+});
+
 function stop(id) 
 {
 	var stop_id = id.toString();
