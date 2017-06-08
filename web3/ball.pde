@@ -6,7 +6,7 @@ void setup()
 
 void draw()
 {
-	stroke();
+	stroke(0);
 	if(mousePressed)
 	{
 		fill(mouseX,mouseY,0);
