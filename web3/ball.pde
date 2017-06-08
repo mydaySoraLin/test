@@ -9,11 +9,11 @@ void draw()
 	stroke();
 	if(mousePressed)
 	{
-		fill(50);
+		fill(mouseX,mouseY,0);
 	}
 	else
 	{
-		fill(150);
+		fill(255);
 	}
 	ellipse(mouseX,mouseY,30,30);
 	if(!play)
