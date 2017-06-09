@@ -23,7 +23,6 @@ void draw()
 		dis = abs(dis - half_width);
 		translate(half_width, half_height - dis, 0);
 	}
-	println(dis);
 
 	ang = radians(angle);
 	rotateY(ang);
