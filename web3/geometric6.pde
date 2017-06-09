@@ -48,10 +48,7 @@ void draw()
 	line(-5,5,-75,-5,5,75);
 	line(-5,-5,-75,-5,-5,75);
 
-	if(!mosuePressed)
-	{
-		angle++;
-	}
+	angle++;
 
 	if(!play)
 	{
