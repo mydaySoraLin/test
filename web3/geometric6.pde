@@ -7,6 +7,8 @@ void setup()
 	background(255);
 	half_width = width / 2;
 	half_height = height / 2;
+	mouseX = half_width;
+	mouseY = half_height;
 }
 
 void draw()
