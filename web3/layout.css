@@ -71,7 +71,7 @@ canvas
 	height: 300px;
 	border: 1px gray solid;
 }
-.other canvas,#ball_5,#line_2,#line_4,#line_5
+.other canvas,#ball_5,#line_2,#line_4,#line_5,#line_6
 {
 	width: 300px;
 }
