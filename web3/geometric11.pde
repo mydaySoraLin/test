@@ -38,7 +38,7 @@ void draw()
 
 	angle1++;
 	angle2 -= 3;
-	angle3 +=3;
+	angle3 += 3;
 	
 	if(!play)
 	{
